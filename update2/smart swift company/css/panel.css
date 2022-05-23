@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Roboto:ital,wght@0,300;0,500;0,700;1,100;1,300;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --mainColor: #152569;
+    --secondColor: #4580b7;
+    --mainWhite: #fff;
+    --mainTransition: all 1s ease;
+    --mainSpacing: 1px;
+    --lightShadow: 0 0 3px grey;
+    --navFont: 'Allerta Stencil', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    font-family: var(--navFont);
+    background: linear-gradient(rgba(21, 37, 105, .8), rgba(21, 37, 105, .8));
+}
+
+nav .img-container {
+    text-align: center;
+}
+
+nav .img-container img {
+    width: 200px;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.nav-details {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-details .links button {
+    text-transform: capitalize;
+    color: var(--mainWhite);
+    font-size: 15px;
+    padding: .2rem;
+}
+
+#usersBtn {
+    color: rgb(50, 205, 179);
+}
+
+.data span {
+    font-size: 15px;
+    color: var(--secondColor);
+    background: var(--mainWhite);
+    border-radius: 20px;
+    padding: 0 .3rem;
+}
+
+@media only screen and (min-width:350px) {
+    .nav-details .links button {
+        font-size: 20px;
+    }
+    .data span {
+        padding: 0rem .5rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:500px) {
+    nav .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .8rem 0;
+    }
+    nav .img-container {
+        width: 33%;
+    }
+    nav .nav-details {
+        width: 65%;
+    }
+    nav .img-container {
+        text-align: unset;
+    }
+    nav .img-container img {
+        width: 160px;
+        margin-top: unset;
+        margin-bottom: unset;
+        margin-left: .5rem;
+    }
+    .nav-details {
+        width: unset;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    nav .img-container {
+        width: 40%;
+    }
+    nav .nav-details {
+        width: 55%;
+    }
+    nav .img-container img {
+        width: 250px;
+    }
+    .nav-details .links button {
+        font-size: 25px;
+        padding: .5rem;
+    }
+    .data span {
+        padding: 0.2rem .8rem;
+        font-size: 22px;
+    }
+}
+
+
+/* users requests contact*/
+
+.users,
+.requests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-header {
+    display: flex;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.sec-header span {
+    color: var(--mainWhite);
+    background: var(--mainColor);
+    font-size: 20px;
+    padding: .5rem 1.2rem;
+    border-radius: 100%;
+}
+
+.sec-header h5 {
+    margin-left: .5rem;
+    text-transform: capitalize;
+    color: var(--mainColor);
+}
+
+.sec-line {
+    height: .5px;
+    background: var(--secondColor);
+    width: 200px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.user,
+.request {
+    border: 1.5px solid var(--secondColor);
+    border-radius: 10px;
+    width: 250px;
+    word-wrap: break-word;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.user h4,
+.request h4,
+.message h4 {
+    color: var(--mainColor);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.user h5,
+.request h5,
+.message h5 {
+    color: var(--mainColor);
+    font-weight: 400;
+}
+
+@media only screen and (min-width:500px) {
+    .users-data,
+    .req-data {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .user,
+    .request {
+        margin-right: 1rem;
+        width: calc(50% - 2rem);
+        border: 2px solid var(--secondColor);
+    }
+}
+
+.contacts {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.message {
+    border: 1.5px solid var(--secondColor);
+    border-radius: 10px;
+    width: 100%;
+    word-wrap: break-word;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width:500px) {
+    .contacts {
+        width: 60%;
+    }
+    .message {
+        border: 2px solid var(--secondColor);
+    }
+}

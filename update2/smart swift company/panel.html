@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pannel</title>
+    <link rel="stylesheet" href="css/panel.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <article class="nav-container">
+            <div class="img-container">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="nav-details">
+                <div class="links">
+                    <button id="usersBtn" class="btn ">users</button>
+                    <button id="reqBtn" class="btn">requests</button>
+                    <button id="contactsBtn" class="btn">contacts</button>
+                </div>
+                <div class="data">
+                    <span>100</span>
+                </div>
+            </div>
+        </article>
+    </nav>
+    <!-- users -->
+    <section class="users" id="users">
+        <div class="sec-header">
+            <span>6</span>
+            <h5>registered users</h5>
+        </div>
+        <div class="sec-line"></div>
+        <div class="users-data">
+            <div class="user">
+                <h4>username</h4>
+                <h5>email@user.com</h5>
+            </div>
+            <div class="user">
+                <h4>username</h4>
+                <h5>email@user.com</h5>
+            </div>
+
+        </div>
+    </section>
+    <!-- requests -->
+    <section class="requests" id="requests" style="display: none;">
+        <div class="sec-header">
+            <span>4</span>
+            <h5>requests remaining</h5>
+        </div>
+        <div class="sec-line"></div>
+        <div class="req-data">
+            <div class="request">
+                <h4>service name</h4>
+                <h5 style="text-transform: capitalize;">username</h5>
+                <h5>email@user.com</h5>
+            </div>
+            <div class="request">
+                <h4>service name</h4>
+                <h5 style="text-transform: capitalize;">username</h5>
+                <h5>email@user.com</h5>
+            </div>
+        </div>
+    </section>
+    <!-- contacts -->
+    <section class="contacts" id="contacts" style="display: none;">
+        <div class="sec-header">
+            <span>2</span>
+            <h5>messages found</h5>
+        </div>
+        <div class="sec-line"></div>
+        <div class="message-data">
+            <div class="message">
+                <h5 style="text-transform: capitalize;">username</h5>
+                <h5>email@user.com</h5>
+                <h4>message will be here</h4>
+            </div>
+            <div class="message">
+                <h5 style="text-transform: capitalize;">username</h5>
+                <h5>email@user.com</h5>
+                <h4>message will be here</h4>
+            </div>
+        </div>
+    </section>
+    <script src="js/pannel.js"></script>
+</body>
+
+</html>
